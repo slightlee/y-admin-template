@@ -1,6 +1,6 @@
 module.exports = {
 
-  title: 'y Admin Template',
+  title: 'Y Admin Template',
 
   /**
    * @type {boolean} true | false
@@ -12,12 +12,15 @@ module.exports = {
    * @type {boolean} true | false
    * @description Whether show the logo in sidebar
    */
-  sidebarLogo: false,
+  sidebarLogo: true,
 
   /**
-   * @type {boolean} true | false
-   * @description Whether need tagsView
+   * 是否需要 tagsView  true | false
    */
-  tagsView: true
+  tagsView: true,
 
+  /**
+   * 是否需要展示 settings   right-panel
+   */
+  showSettings: true
 }
