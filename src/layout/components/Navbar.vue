@@ -14,6 +14,8 @@
           <size-select id="size-select" class="right-menu-item hover-effect" />
         </el-tooltip>
 
+        <lang-select class="right-menu-item hover-effect" />
+
       </template>
 
       <el-dropdown class="avatar-container" trigger="click">
@@ -48,13 +50,15 @@ import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
 import Screenfull from '@/components/Screenfull'
 import SizeSelect from '@/components/SizeSelect'
+import LangSelect from '@/components/LangSelect'
 
 export default {
   components: {
     Breadcrumb,
     Hamburger,
     Screenfull,
-    SizeSelect
+    SizeSelect,
+    LangSelect
   },
   computed: {
     ...mapGetters([
