@@ -44,6 +44,18 @@ export const constantRoutes = [
   },
 
   {
+    path: '/redirect',
+    component: Layout,
+    hidden: true,
+    children: [
+      {
+        path: '/redirect/:path*',
+        component: (resolve) => require(['@/views/redirect/index'], resolve)
+      }
+    ]
+  },
+
+  {
     path: '/',
     component: Layout,
     redirect: '/dashboard',
