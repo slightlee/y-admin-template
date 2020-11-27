@@ -2,7 +2,7 @@ import request from '@/utils/request'
 
 export function login(data) {
   return request({
-    url: '/y-admin-template/user/login',
+    url: '/sys/login',
     method: 'post',
     data
   })
@@ -10,15 +10,16 @@ export function login(data) {
 
 export function getInfo(token) {
   return request({
-    url: '/y-admin-template/user/info',
+    url: '/user/info',
     method: 'get',
     params: { token }
   })
 }
 
-export function logout() {
+export function logout(token) {
   return request({
-    url: '/y-admin-template/user/logout',
-    method: 'post'
+    url: '/sys/logout',
+    method: 'get',
+    params: { token }
   })
 }
